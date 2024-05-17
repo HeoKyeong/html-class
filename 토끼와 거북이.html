@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Page</title>
+    <title>토끼와 거북이</title>
     <link type="text/css" rel="stylesheet" href="my css.css">
-</head>
+    <style>
+        #img1, #img2 {width: 100px; display: block; position: relative; margin: 10px; animation: myanim 5s infinite;}
+        #img1 {animation-timing-function: ease-out;}
+        #img2 {animation-timing-function: ease-in;}
+        @keyframes myanim {from {left: 0px;} to {left: 1000px;}}
+    </style>
+    </head>
 <body>
     <header> <h1>My Blog Page</h1> </header>
     <nav>
@@ -26,15 +32,8 @@
     </nav>
     <section id="main">
     <article> 
-        <h1>4계절의 이유</h1> 
-        <p>계절이 나타날 수 있는 이유는 지구가 구형이고 자전축이 23.5도만큼 기울어져 있기 때문이다. 
-            지구가 공전하면서 자전축이 태양 쪽을 향할 때는 북반구 기준으로 태양의 고도가 높으니 태양광의 조도(단위면적당 받는 빛의 밀도)가 높아 기온이 높은 여름이 되고 
-            자전축이 태양 반대쪽을 향할 때는 반대로 태양의 고도가 낮으니 조도가 낮아 기온이 낮은 겨울이 된다. 
-            그래서 남반구는 계절이 반대이다. 6~8월이 겨울이고 12~2월이 여름이다.</p>
-    </article>
-    <article>
-        <h1>계절에 대해 알아보자!</h1>
-        <p>옆의 링크를 눌러 각 계절의 특징을 확인해보자</p>
+        <img id="img1" src="이미지/토끼.webp" width="60" height="90">
+        <img id="img2" src="이미지/거북이.webp" width="60" height="90">
     </article>
     </section>
     <footer>CC BY-NC-SA 2.0 KR</footer>
